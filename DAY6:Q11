@@ -1,0 +1,24 @@
+Day 6
+Q11. Write a program to input an integer and check whether it is even or odd using if–else.
+#include <stdio.h>
+
+int main(){
+
+    int X;
+
+   
+    printf("Enter the value");
+    scanf("%d", &X);
+
+    if (X % 2 == 0)
+{
+printf("The input value is even");
+}
+    else 
+{
+    printf("The input value is odd");
+}
+
+return 0;
+
+}
