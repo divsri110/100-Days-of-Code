@@ -1,0 +1,22 @@
+Day 5
+# -Program-to-calculate-simple-and-compound-interest-using-Principal-Rate-ad-Time.
+//Q9. Write a program to calculate simple and compound interest for given principal, rate, and time.
+
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+
+float Simple_Intrest, Compound_Intrest, P, R, T;
+
+printf("Enter the value of P, R, T");
+scanf("%f%f%f", &P, &R, &T);
+
+Simple_Intrest=(P*R*T)/100;
+Compound_Intrest=pow(P*(1+(R/100)),T-1);
+
+printf("Simple_Intrest=%f\n", Simple_Intrest);
+printf("Compound Intrest=%f\n", Compound_Intrest);
+
+return 0;
+}
