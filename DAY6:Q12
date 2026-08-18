@@ -1,0 +1,25 @@
+Day 6
+Q12. Write a program to input an integer and check whether it is positive, negative or zero using nested if–else.
+
+#include<stdio.h>
+
+int main (){
+
+    int num, positive, negative, zero;
+
+    printf("Enter the value");
+    scanf("%d", &num);
+
+    if (num>0)
+    printf("The value is positive");
+
+    else if (num==0)
+
+printf("The value is zero");
+
+else 
+printf("The value is negative");
+
+return 0;
+
+}
