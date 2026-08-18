@@ -1,0 +1,22 @@
+Day 5
+# Program-to-input-time-in-seconds-and-convert-it-to-hours-minutes-seconds-format.
+
+//Q.10Write a program to input time in seconds and convert it to hours:minutes:seconds format.
+
+#include<stdio.h>
+#include<math.h>
+
+int main (){
+int sec, minutes, hours;
+
+printf("Enter the time in seconds");
+scanf("%d", &sec);
+
+hours=sec/3600;
+minutes=(sec%3600)/60;
+sec=sec%60;
+
+printf("hours:minutes:seconds=%d:%d:%d", hours, minutes, sec);
+
+return 0;
+}
