@@ -1,0 +1,25 @@
+//Q15. Write a program to input a character and check whether it is an uppercase alphabet, lowercase alphabet, digit, or special character.
+
+#include<stdio.h>
+int main(){
+
+char letter, digit;
+
+printf("Enter the Letter");
+scanf("%c", &letter);
+
+if( letter>='a' && letter<='z')
+printf("The letter is in lower case");
+
+else if(digit>=0 && digit<=9)
+printf("It is a digit");
+
+else if (letter>='A' && letter<='Z')
+printf("The letter is in uppercase");
+
+else
+printf("It's a special character");
+
+return 0;
+
+}
