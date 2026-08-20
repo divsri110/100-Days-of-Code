@@ -1,0 +1,31 @@
+//Q.19 Write a program to find the roots of a quadratic equation and categorize them.
+
+#include<stdio.h>
+#include<math.h>
+int main(){
+
+ float a, b, c, d, root1, root2, root, d3;
+ 
+ printf("Enter the value of a, b, and c");
+ scanf("%f%f%f", &a, &b, &c);
+
+ d=b*b-4*a*c;
+ 
+ if(d>0)
+ {
+ root1=(-b+sqrt(d))/2*a;
+ root2=(-b-sqrt(d))/2*a;
+
+ printf("Two real and different roots");
+ printf("Root1=%d", root1);
+ printf("Root2=%d", root2);
+ }
+ else if("d==0")
+ printf("Root are zero");
+
+ else
+ printf("Roots are imaginary");
+
+ return 0;
+
+ }
